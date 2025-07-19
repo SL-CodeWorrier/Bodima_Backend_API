@@ -16,6 +16,11 @@ const habitationSchema = new mongoose.Schema({
     required: [true, 'Description is required'],
     trim: true,
   },
+  price: {
+    type: Number,
+    required: [true, 'Price is required'],
+    trim: true,
+  },
   type: {
     type: String,
     required: [true, 'Type is required'],

@@ -20,15 +20,6 @@ const storySchema = new mongoose.Schema({
     required: false,
     trim: true
   },
-  profilePictureUrl: {
-    type: String,
-    required: true,
-    trim: true,
-    validate: {
-      validator: v => /^https?:\/\/.+/.test(v),
-      message: 'Invalid URL for Profile Picture'
-    }
-  }
 }, {
   timestamps: true
 });
